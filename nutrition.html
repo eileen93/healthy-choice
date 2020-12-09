@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+    <head>
+        <meta charset="utf-8">
+        <!-- add meta element for the view port-->
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <title>Eileen's Healthy Choice: Nutrition</title>
+       
+        <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+        
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/nutrition.css">
+
+        <!-- The JavaScript shiv for using HTML5 semantics with IE7 and 8 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>     
+
+        <!-- code for the SlickNav plugin -->
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+        
+        <style>
+            body h2 {
+                padding: 2.5% 2.5% 1%;
+            } 
+        </style>
+        
+    </head>
+
+    <body>   
+        <header id="nutrition_top">
+            <img src="images/logo.png" alt="Eileen's Healthy Choice logo" height="90" class="center"> 
+            <h2>Eileen's Healthy Choice</h2> 
+            <h3><italic>Eating well &amp; Stay Healthy</italic></h3>
+        </header>
+
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.html">Menu</a> </li>
+                <li><a href="nutrition.html" class="current">Nutrition</a></li>
+                <li><a href="recipe.html">Recipe</a></li>	         
+            </ul>
+        </nav>
+
+        <aside>
+            <h2>For high blood pressure or senior, check Fat, Cholesterol, Sodium before ordering.</h2>
+    
+            <h3>What is nutriton? why is the nutrition facts of food important?</h3>
+            <figure id="nutrition">
+                <figcaption class="hidden_caption">Nutritious Food Image</figcaption>
+                <img src="images/nutrition-image.jpg" alt="nutritious food image">     
+            </figure>
+            <blockquote><q>Nutrition is about eating a healthy and balanced diet so your body gets the nutrients that it needs. Nutrients are substances in foods that our bodies need so they can function and grow. They include carbohydrates, fats, proteins, vitamins, minerals, and water.
+
+                Good nutrition is important, no matter what your age. It gives you energy and can help you control your weight. It may also help prevent some diseases, such as osteoporosis, high blood pressure, heart disease, type 2 diabetes, and certain cancers.
+
+                But as you age, your body and life change, and so does what you need to stay healthy. For example, you may need fewer calories, but you still need to get enough nutrients. Some older adults need more protein.</q></blockquote>
+            <br>
+            <h4 class="right"><a href="https://medlineplus.gov/nutritionforolderadults.html " target="_blank">Read more about nutrition</a></h4>   
+        </aside>
+        
+        <h2>Nutrition Facts For Menu Items</h2>
+        <div>
+            <figure id="f1">
+                <figcaption>Grilled Cage-free Chicken Salad</figcaption>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th id="hdr_nutrition_facts1" colspan="2">Nutrition Facts</th> 
+                            </tr>
+                            <tr>
+                                <th id="hdr_serving_size1">Serving Size</th>
+                                <td headers="hdr_serving_size1">1 Plate</td>
+                            </tr>
+                            
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th id="hdr_calories1">Calories</th>
+                                <td headers="hdr_calories1">620</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_calroies_from_fat1">Calories from Fat</th>
+                                <td headers="hdr_calroies_from_fat1">340</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_total_fat1">Total Fat</th>
+                                <td headers="hdr_total_fat1">39g</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_saturated_fat1">Saturated Fat</th>
+                                <td headers="hdr_saturated_fat1">6g</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_trans_fat1">Trans Fat</th>
+                                <td headers="hdr_trans_fat1">0g</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_cholesterol1">Cholesterol</th>
+                                <td headers="hdr_cholesterol1">155mg</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_sodium1">Sodium</th>
+                                <td headers="hdr_sodium1">1450mg</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_carbs1">Carbohydrates</th>
+                                <td headers="hdr_carbs1">46g</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_dietary_fiber1">Dietary Fiber</th>
+                                <td headers="hdr_dietary_fiber1">6g</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_sugars1">Sugars</th>
+                                <td headers="hdr_sugars1">32g</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_protein1">Protein</th>
+                                <td headers="hdr_protein1">28g</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_vitamin_A1">Vitamin A</th>
+                                <td headers="hdr_vitamin_A1">350%</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_vitamin_C1">Vitamin C</th>
+                                <td headers="hdr_vitamin_C1">70%</td>
+                            </tr>  
+                            <tr> 
+                                <th id="hdr_calcium1">Calcium</th>
+                                <td headers="hdr_calcium1">20%</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_iron1">Iron</th>
+                                <td headers="hdr_iron1">20%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="index.html#s1" >back to the menu page</a>
+            </figure>
+
+            <figure id="f2">
+                <figcaption>Slow-Cooked Moroccan Chicken Braise</figcaption>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th id="hdr_nutrition_facts2" colspan="2">Nutrition Facts</th> 
+                            </tr>
+                            <tr>
+                                <th id="hdr_serving_size2">Serving Size</th>
+                                <td headers="hdr_serving_size2">1 Bowl</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th id="hdr_calories2">Calories</th>
+                                <td headers="hdr_calories2">530</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_calroies_from_fat2">Calories from Fat</th>
+                                <td headers="hdr_calroies_from_fat2">90</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_total_fat2">Total Fat</th>
+                                <td headers="hdr_total_fat2">11g</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_saturated_fat2">Saturated Fat</th>
+                                <td headers="hdr_saturated_fat2">2g</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_trans_fat2">Trans Fat</th>
+                                <td headers="hdr_trans_fat2">0g</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_cholesterol2">Cholesterol</th>
+                                <td headers="hdr_cholesterol2">120mg</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_sodium2">Sodium</th>
+                                <td headers="hdr_sodium2">490mg</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_carbs2">Carbohydrates</th>
+                                <td headers="hdr_carbs2">75g</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_dietary_fiber2">Dietary Fiber</th>
+                                <td headers="hdr_dietary_fiber2">7g</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_sugars2">Sugars</th>
+                                <td headers="hdr_sugars2">4g</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_protein2">Protein</th>
+                                <td headers="hdr_protein2">34g</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_vitamin_A2">Vitamin A</th>
+                                <td headers="hdr_vitamin_A2">25%</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_vitamin_C2">Vitamin C</th>
+                                <td headers="hdr_vitamin_C2">20%</td>
+                            </tr>  
+                            <tr> 
+                                <th id="hdr_calcium2">Calcium</th>
+                                <td headers="hdr_calcium2">8%</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_iron2">Iron</th>
+                                <td headers="hdr_iron2">20%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="index.html#s4" >back to the menu page</a>
+            </figure>
+
+            <figure id="f3">
+                <figcaption>Grilled Grass Fed Steak Salad</figcaption>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th id="hdr_nutrition_facts3" colspan="2">Nutrition Facts</th> 
+                            </tr>
+                            <tr>
+                                <th id="hdr_serving_size3">Serving Size</th>
+                                <td headers="hdr_serving_size3">1 Plate</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th id="hdr_calories3">Calories</th>
+                                <td headers="hdr_calories3">590</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_calroies_from_fat3">Calories from Fat</th>
+                                <td headers="hdr_calroies_from_fat3">330</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_total_fat3">Total Fat</th>
+                                <td headers="hdr_total_fat3">38g</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_saturated_fat3">Saturated Fat</th>
+                                <td headers="hdr_saturated_fat3">8g</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_trans_fat3">Trans Fat</th>
+                                <td headers="hdr_trans_fat3">0g</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_cholesterol3">Cholesterol</th>
+                                <td headers="hdr_cholesterol3">90mg</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_sodium3">Sodium</th>
+                                <td headers="hdr_sodium3">710mg</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_carbs3">Carbohydrates</th>
+                                <td headers="hdr_carbs3">30g</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_dietary_fiber3">Dietary Fiber</th>
+                                <td headers="hdr_dietary_fiber3">5g</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_sugars3">Sugars</th>
+                                <td headers="hdr_sugars3">20g</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_protein3">Protein</th>
+                                <td headers="hdr_protein3">39g</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_vitamin_A3">Vitamin A</th>
+                                <td headers="hdr_vitamin_A3">160%</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_vitamin_C3">Vitamin C</th>
+                                <td headers="hdr_vitamin_C3">90%</td>
+                            </tr>  
+                            <tr> 
+                                <th id="hdr_calcium3">Calcium</th>
+                                <td headers="hdr_calcium3">8%</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_iron3">Iron</th>
+                                <td headers="hdr_iron3">40%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="index.html#s5" >back to the menu page</a>
+            </figure>
+
+            <figure id="f4">
+                <figcaption>Grilled Portobello Mushroom Sandwich</figcaption>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th id="hdr_nutrition_facts4" colspan="2">Nutrition Facts</th> 
+                            </tr>
+                            <tr>
+                                <th id="hdr_serving_size4">Serving Size</th>
+                                <td headers="hdr_serving_size4">1 Sandwidth</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th id="hdr_calories4">Calories</th>
+                                <td headers="hdr_calories4">720</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_calroies_from_fat4">Calories from Fat</th>
+                                <td headers="hdr_calroies_from_fat4">380</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_total_fat4">Total Fat</th>
+                                <td headers="hdr_total_fat4">44g</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_saturated_fat4">Saturated Fat</th>
+                                <td headers="hdr_saturated_fat4">9g</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_trans_fat4">Trans Fat</th>
+                                <td headers="hdr_trans_fat4">0g</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_cholesterol4">Cholesterol</th>
+                                <td headers="hdr_cholesterol4">15mg</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_sodium4">Sodium</th>
+                                <td headers="hdr_sodium4">1020mg</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_carbs4">Carbohydrates</th>
+                                <td headers="hdr_carbs4">66g</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_dietary_fiber4">Dietary Fiber</th>
+                                <td headers="hdr_dietary_fiber4">4g</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_sugars4">Sugars</th>
+                                <td headers="hdr_sugars4">4g</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_protein4">Protein</th>
+                                <td headers="hdr_protein4">20g</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_vitamin_A4">Vitamin A</th>
+                                <td headers="hdr_vitamin_A4">30%</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_vitamin_C4">Vitamin C</th>
+                                <td headers="hdr_vitamin_C4">60%</td>
+                            </tr>  
+                            <tr> 
+                                <th id="hdr_calcium4">Calcium</th>
+                                <td headers="hdr_calcium4">10%</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_iron4">Iron</th>
+                                <td headers="hdr_iron4">35%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="index.html#s7" >back to the menu page</a>
+            </figure>
+
+            <figure id="f5">
+                <figcaption>Grilled Wild Ahi Nicoise Salad</figcaption>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th id="hdr_nutrition_facts5" colspan="2">Nutrition Facts</th> 
+                            </tr>
+                            <tr>
+                                <th id="hdr_serving_size5">Serving Size</th>
+                                <td headers="hdr_serving_size5">1 Plate</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th id="hdr_calories5">Calories</th>
+                                <td headers="hdr_calories5">650</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_calroies_from_fat5">Calories from Fat</th>
+                                <td headers="hdr_calroies_from_fat5">430</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_total_fat5">Total Fat</th>
+                                <td headers="hdr_total_fat5">49g</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_saturated_fat5">Saturated Fat</th>
+                                <td headers="hdr_saturated_fat5">6g</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_trans_fat5">Trans Fat</th>
+                                <td headers="hdr_trans_fat5">0g</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_cholesterol5">Cholesterol</th>
+                                <td headers="hdr_cholesterol5">200mg</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_sodium5">Sodium</th>
+                                <td headers="hdr_sodium5">1100mg</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_carbs5">Carbohydrates</th>
+                                <td headers="hdr_carbs5">19g</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_dietary_fiber5">Dietary Fiber</th>
+                                <td headers="hdr_dietary_fiber5">4g</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_sugars5">Sugars</th>
+                                <td headers="hdr_sugars5">6g</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_protein5">Protein</th>
+                                <td headers="hdr_protein5">35g</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_vitamin_A5">Vitamin A</th>
+                                <td headers="hdr_vitamin_A5">180%</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_vitamin_C5">Vitamin C</th>
+                                <td headers="hdr_vitamin_C5">45%</td>
+                            </tr>  
+                            <tr> 
+                                <th id="hdr_calcium5">Calcium</th>
+                                <td headers="hdr_calcium5">8%</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_iron5">Iron</th>
+                                <td headers="hdr_iron5">25%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="index.html#s9" >back to the menu page</a>
+            </figure>
+
+            <figure id="f6">
+                <figcaption>Beets + Avocado Plant Based Bowl</figcaption>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th id="hdr_nutrition_facts6" colspan="2">Nutrition Facts</th> 
+                            </tr>
+                            <tr>
+                                <th id="hdr_serving_size6">Serving Size</th>
+                                <td headers="hdr_serving_size6">1 Bowl</td>
+                            </tr>
+                            
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th id="hdr_calories6">Calories</th>
+                                <td headers="hdr_calories6">720</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_calroies_from_fat6">Calories from Fat</th>
+                                <td headers="hdr_calroies_from_fat6">390</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_total_fat6">Total Fat</th>
+                                <td headers="hdr_total_fat6">45g</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_saturated_fat6">Saturated Fat</th>
+                                <td headers="hdr_saturated_fat6">4.5g</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_trans_fat6">Trans Fat</th>
+                                <td headers="hdr_trans_fat6">0g</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_cholesterol6">Cholesterol</th>
+                                <td headers="hdr_cholesterol6">0</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_sodium6">Sodium</th>
+                                <td headers="hdr_sodium6">1570mg</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_carbs6">Carbohydrates</th>
+                                <td headers="hdr_carbs6">70g</td>
+                            </tr>  
+                            <tr>
+                                <th id="hdr_dietary_fiber6">Dietary Fiber</th>
+                                <td headers="hdr_dietary_fiber6">15g</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_sugars6">Sugars</th>
+                                <td headers="hdr_sugars6">24g</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_protein6">Protein</th>
+                                <td headers="hdr_protein6">19g</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_vitamin_A6">Vitamin A</th>
+                                <td headers="hdr_vitamin_A6">35%</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_vitamin_C6">Vitamin C</th>
+                                <td headers="hdr_vitamin_C6">70%</td>
+                            </tr>  
+                            <tr> 
+                                <th id="hdr_calcium6">Calcium</th>
+                                <td headers="hdr_calcium6">10%</td>
+                            </tr>
+                            <tr>
+                                <th id="hdr_iron6">Iron</th>
+                                <td headers="hdr_iron6">30%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="index.html#s11" >back to the menu page</a>
+            </figure>
+        </div>
+    
+        <p id="nutrition_page">More Nutritional Information: <a href="Urban-Plates-Nutritonal-Master-9.21.20.pdf" type="application/pdf" target="_blank">DOWNLOAD PDF</a>
+        </p>
+        
+        <h4 class="right">
+            <a href="nutrition.html#nutrition_top" >go to the Top</a>
+        </h4>
+        
+    </body>
+
+    <footer>
+        <p class="copyright">&copy; 4592, Mirano Ct, Dublin, CA 94568</p>
+        <p>Created by Eileen</p>
+    </footer>
+
+</html>

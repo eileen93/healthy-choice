@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+     
+    <head>
+        <meta charset="utf-8">
+        <!--------- add meta element for the view port---------------->
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">       <!-- add meta element for the view port / refer to the exercise 8-1 No.2 -->
+        <title>Eileen's Healthy Choice: Menu</title>
+         <!------------------for website project 11/20/2020 --------------------------->
+        <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+        <!----------------------------------------------------------------------------->
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/menu.css">
+
+        <!-- The JavaScript shiv for using HTML5 semantics with IE7 and 8 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>     
+
+        <!-- code for the SlickNav plugin -->
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+        <style>
+            body h2 {
+                padding: 2.5% 2.5% 1%;
+            }
+        </style>
+    </head>
+
+    <body>   
+        <header id="menu_top">
+            <img src="images/logo.png" alt="Eileen's Healthy Choice logo" height="90" class="center"> <!-- document-relative paths that navigate down from the root folder -->
+            <h2>Eileen's Healthy Choice</h2> 
+            <h3>Eating well &amp; Stay Healthy</h3>
+        </header>
+
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="intex.html" class="current">Menu</a> </li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="recipe.html">Recipe</a></li>	         
+            </ul>
+        </nav>
+        
+        <aside>
+                <h2>Check ingredients, GI, Calories before order</h2>
+
+                <h3>What is GI?</h3>
+
+                <blockquote><q>The glycemic index(GI) is a value assigned to foods based on how slowly or how quickly those foods cause increases in blood glucose levels. Foods low on the glycemic index (GI) scale tend to release glucose slowly and steadily. Foods high on the glycemic index release glucose rapidly. Low GI foods tend to foster weight loss, while foods high on the GI scale help with energy recovery after exercise, or to offset hypo- (or insufficient) glycemia. Long-distance runners would tend to favor foods high on the glycemic index, while people with pre- or full-blown diabetes would need to concentrate on low GI foods. Why? People with type 1 diabetes can't produce sufficient quantities of insulin and those with type 2 diabetes are resistant to insulin. With both types of diabetes, faster glucose release from high GI foods leads to spikes in blood sugar levels. The slow and steady release of glucose in low-glycemic foods helps maintain good glucose control.</q></blockquote>
+                <br>
+                <h4>
+                    <a href="https://www.health.harvard.edu/diseases-and-conditions/glycemic-index-and-glycemic-load-for-100-foods ">Read more about glycemic index</a>  
+                </h4>
+
+            </aside>
+            <h2>Eileen's Healthy Choice Menu Items</h2>
+
+         <main>
+             <div>
+               <section id="s1">
+                    <h2>Grilled Cage-Free Chicken Salad</h2>
+                    <img src="images/chicken-salad.jpg" alt="grilled chicken salad">
+                    <p>herb marinated cage-free, hormone and antibiotic free chicken, baby mixed greens, organic roma tomatoes, shredded organic carrots, jicama, pickled red onion, preserved lemon vinaigrette</p>
+                   <br>                       
+                    <p>620 cal (+150 w/ bread), dairy free &amp; gluten free (w/o bread), low GI</p>
+                    <a href="nutrition.html#f1" >Nutrition Facts</a>
+
+                   <!--<h2 id="moss">Moss</h2> , and then link to it by using something like this: <a href="#moss">Go to moss</a> -->
+                </section>
+                <section id="s2">
+                    <h2>Chimichurri Chicken Plate</h2>
+                    <img src="images/chimichurri-chicken.jpg" alt="Chimichurri Chicken Plate">
+                    <p>bright fresh herb chimichurri sauce drizzled over grilled cage free, hormone and antibiotic free chicken. served with organic white and red quinoa and sesame broccolini with garlic shallot lemon squeeze</p>
+                    <br>
+                    <p>750 cal (+150 w/ bread), dairy free &amp; gluten free (w/o bread)</p>
+                    <a href="nutrition.html#f2" >Nutrition Facts</a>
+                </section>
+                <section id="s3">
+                    <h2>Grilled Cage Free Chicken Sandwich</h2>
+                    <img src="images/chicken-sandwich.jpg" alt="Grilled Cage Free Chicken Sandwich">
+                    <p>hand carved herb grilled cage-free, antibiotic and hormone free chicken, slow roasted tomatoes and orange basil aioli on chargrilled artisan ciabatta bread. served with house kettled potato chips</p>
+                    <br>
+                    <p>690 cal (+150 w/chips), dairy free</p>
+                    <a href="nutrition.html#f3" >Nutrition Facts</a>
+                </section>
+                 <section id="s4">
+                    <h2>Slow-Cooked Moroccan Chicken Braise</h2>
+                    <img src="images/moroccan-chicken-braise.jpg" alt="Moroccan Chicken Braise">
+                    <p>slow-cooked cage-free, antibiotic and hormone free chicken tagine with winter squash, olives, preserved lemon and ginger with aromatic spices of turmeric, paprika, cumin and cinnamon served over organic brown or white rice</p>
+                     <br>
+                    <p>530-590 cal, dairy free &amp; gluten free</p>
+                    <a href="nutrition.html#f2" >Nutrition Facts</a>
+                </section>
+                <section id="s5">
+                    <h2>Grilled Grass-Fed Steak Salad</h2>
+                    <img src="images/grass-fed-steak-salad.jpg" alt="Grilled Grass Fed Steak Salad">
+                    <p>grilled grass-fed steak, lettuce blend, pineapple mango salsa, jicama, mint, coconut roasted cashews, hand-tossed with scratch-made mild jalapeno-lime dressing &amp; grilled rustic bread</p>
+                    <br>
+                    <p>590 cal, low GI</p>
+                    <a href="nutrition.html#f3" >Nutrition Facts</a>
+                </section>
+                <section id="s6">
+                    <h2>Chimichurri Grass Fed Steak Plate</h2>
+                    <img src="images/chimichurri-steak-plate.jpg" alt="Chimichurri Grass Fed Steak Plate">
+                    <p>grilled medium rare grass-fed steak and served with any two sides &amp; grilled rustic bread</p>
+                    <br>
+                    <p>930 cal</p>
+                    <a href="nutrition.html#f6" >Nutrition Facts</a>
+                </section> 
+                <section id="s7">
+                    <h2>Grilled Portobello Mushroom Sandwich</h2>
+                    <img src="images/portobello-mushroom.jpg" alt="Grilled Portobello Mushroom Sandwich">
+                    <p>stacked portobellos, zucchini and red bell peppers with arugula and pesto goat cheese on grilled artisan ciabatta bread. served with house kettled potato chips</p>
+                    <br>
+                    <p>720 cal (+150 w/chips), vegetarian</p>
+                    <a href="nutrition.html#f4" >Nutrition Facts</a>
+                </section>
+                <section id="s8">
+                    <h2>Curry Tofu &amp; Vegetable Braise</h2>
+                    <img src="images/curry-tofu-veg-bowl.jpg" alt="Curry Tofu & Vegetable Braise">
+                    <p>organic slow cooked tofu in green curry coconut sauce with organic carrots, daikon radishes, organic granny smith apples and zucchini. served over organic steamed brown or white rice</p>
+                    <br>
+                    <p>490-540 cal, vegan &amp; gluten free</p>
+                    <a href="nutrition.html#f8" >Nutrition Facts</a>
+                </section>
+                <section id="s9">
+                    <h2>Grilled Wild Ahi Nicoise Salad</h2>
+                    <img src="images/ahi-nicoise.jpg" alt="Wild Ahi Nicoise Salad">
+                    <p>Lettuce blend, grilled wild ahi, green beans, organic egg, organic tomatoes, potatoes, capers, marinated olives, mustard-champagne vinaigrette</p>
+                    <br>
+                    <p>1230 cal, low GI</p>
+                    <a href="nutrition.html#f5" >Nutrition Facts</a>
+                </section>
+                <section id="s10">
+                    <h2>Sustainable Salmon Caesar Salad</h2>
+                    <img src="images/salmon-caesar.jpg" alt="Sustainable Salmon Caesar Salad">
+                    <p>organic romaine lettuce, organic baby kale, sustainable salmon, organic tomatoes, garlic croutons, shave asiago, caesar dressing</p>
+                    <br>
+                    <p>1190 cal, low GI</p>
+                    <a href="nutrition.html#f10" >Nutrition Facts</a>
+                </section>
+                <section id="s11">
+                    <h2>Beets + Avocado Plant Based Bowl</h2>
+                    <img src="images/beetsavocado.jpg" alt="Beets + Avocado Plant Based Bowl">
+                    <p>colorful array of marinated red beets, fresh sliced avocado and pickled red onions with raw walnuts, organic quinoa, hemp seeds and miso lemongrass dressing</p>
+                    <br>
+                    <p>720 cal, vegan, gluten free, low GI</p>
+                    <a href="nutrition.html#f6" >Nutrition Facts</a>
+                </section>
+                <section id="s12">
+                    <h2>Chickpea + Sweet Potato Bowl</h2>
+                    <img src="images/chickpeasweetpotato.jpg" alt="Chickpea + Sweet Potato Bowl">
+                    <p>with organic lentils, cabbage, goji berries, green peas, chia seeds, kale pesto, harissa sauce.</p>
+                    <br>
+                    <p>720 cal, vegan &amp; gluten free, low GI</p>
+                    <a href="nutrition.html#f12" >Nutrition Facts</a>
+                </section>
+            </div>  
+            
+        </main>
+        <p> All menus are from Urban Plate:<a herf="https://urbanplates.com/everydayvalues/"> link to Urban Plates</a></p>
+        <h4>
+            <a href="index.html#menu_top" >go to the Top</a>
+        </h4>
+ </body>
+
+ <footer>
+        <p class="copyright">&copy; 4592, Mirano Ct, Dublin, CA 94568</p>
+        <p>Created by Eileen</p>
+ </footer>
+
+</html>

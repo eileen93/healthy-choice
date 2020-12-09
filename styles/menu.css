@@ -1,0 +1,316 @@
+/***********************************************************************************************
+                        css file for menu page of Eileen's Healthy Choice */
+/***********************************************************************************************/
+
+/* the reset selector */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*/* tablet landscape and desktop layout (960px or more) */
+
+/* hide mobile menu */
+#mobile_menu {
+    display: none;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 98%;     
+    max-width: 960px;      
+    border: 3px solid beige;
+    background-color: #ffffff;
+    margin: 0 auto 0;
+}
+h4 {
+    text-align: right;
+    margin-right: 1em;
+    margin-bottom:1em;
+}
+
+/* the styles for the header */    
+header {
+    /*border: 1px solid darkgreen;*/
+    width:100%;  
+    padding-top: .5em;
+    padding-bottom: .1em;
+
+    background-image: -webkit-linear-gradient(90deg, white 0%, beige 70%, darkgreen 100%); 
+}
+header img {
+    /*border: 1px solid black;*/
+	float: left;
+    padding: 0 1% 0;                 /* 30/800*100 refer to the exercise 8-1 No.6 */
+    height: 80px;
+}
+header h2 {
+    /*border: 1px solid black;*/
+    float: left;
+    font-style:italic;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size:200%;
+    color: forestgreen;
+}
+header h3 {
+    font-family: Caveat;               
+    font-size:150%;
+    text-align: right;
+    padding-top: 6.5%;
+    padding-right: 1.5%;
+} 
+.shadow {
+    color: #3cb44a;
+    text-shadow:2px 2px; 
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+}
+a:hover {
+    color: green;
+    font-style: italic;
+}
+/* the styles for the navigation */
+nav {
+   clear: both;
+}
+
+#nav_menu ul{
+    display: flex;      
+    flex-basis: 100%;    
+    justify-content: space-around;  
+    margin: 0;
+    padding: 0;
+    list-style: none;       
+    position: relative;     
+}
+#nav_menu ul ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li{
+    float: none;
+}
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+#nav_menu > ul::after {
+    content: "";    
+    display: block;    
+    clear: both;    
+}
+#nav_menu ul li{
+    flex-basis: 33.33%;         
+}
+#nav_menu ul li a {
+    text-align: center;
+    display: block;                         
+    /* width: 160px; */
+    text-decoration: none;
+    background-color: beige;          
+    color: darkgreen;
+    font-weight: bold;
+    padding: 1em 0;
+}
+#nav_menu ul li a.current{
+    color: lightcoral;
+}
+#nav_menu ul li a:hover {
+    background-color: yellow;
+}
+
+/* the styles for the footer */
+footer {
+    clear: both;
+    background-color: beige;
+    padding-top:1em;
+    padding-bottom:1em;
+    
+}
+footer p {
+    color: darkgreen;
+    text-align: center;
+}
+
+/* the styles for the body */
+
+main {
+    display: flex;      
+    padding: 0 0 0;
+}
+
+/* the styles for the section */
+section {
+    flex-basis: 28%;      
+    padding: 2.5% 2.5% 2.5%;       
+    margin: 1% 1% 0;          
+    height: 500px;
+}
+main div {
+        column-count: 3;   
+    }
+section h1 {
+    font-size: 150%;
+    padding-top: .5em;
+    padding-bottom: .25em;
+    margin: 0;
+}
+section h2 {
+    font-size: 130%;
+    color: purple;
+    padding-top: .5em;
+    padding-bottom: .25em;
+   
+     /* 11/14/2020 text over flow
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    11/14/2020 text over flow*/
+}
+section h3 {
+    font-size: 105%;
+     padding-left:.5em;
+    padding-bottom: .25em;
+}
+section img{                        
+    max-width: 90%;
+    min-width: 150px;
+}
+section p {
+    padding-bottom: .5em;
+}
+section a {
+    color: darkgreen;
+    text-decoration-line: underline;
+    text-align: right;
+}
+section blockquote{
+    padding-right: 2em;
+    padding-left: 2em;
+    font-style:italic;
+}
+section ul{
+    list-style-type: circle;
+    padding-bottom: .25em;
+    padding-left: 1.25em;
+}
+section li{
+    padding-bottom: .35em;
+}
+
+/* the styles for the aside section */
+aside {                             
+    order: 1;
+    flex-basis: 80%; 
+    padding: 0 2.5% 2.5%;        /* 20/800*100 */
+    margin: 0 1% 0;                /* 8/800 *100 */
+}
+
+aside h2 {
+    font-size: 150%;
+    color: #000000;
+    margin: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+}
+aside h3 {
+    font-size: 105%;
+    padding-bottom: .25em;
+}
+aside img{
+    max-width: 90%;
+    min-width: 150px;
+    padding-bottom: 1em;
+}
+
+ {
+    padding-top: 0;
+}
+
+
+/*/* tablet portrait layout (768px to 959px) */
+@media only screen and (max-width: 959px){
+    section h1 {
+        font-size: 135%;
+        
+    }
+    section h2 {
+        font-size: 120%;
+    }
+
+    aside h2 {
+        font-size: 120%;
+    }
+
+    header h3 {
+    padding-top: 7.5%;
+    padding-right: 1.5%;
+    text-align: right;
+    } 
+}
+    
+/*/* mobile landscape layout (480px to 767px) */
+@media only screen and (max-width: 767px){
+    #nav_menu {
+        display: none;
+    }  
+    #mobile_menu 
+    { display: block;
+    }
+   .slicknav_menu {
+        background-color: lightcoral!important;
+    }
+    header img {
+        float: none;  
+    }  
+    header h2 {
+        float: none;
+        text-align: center;
+    }   
+    header h3 {
+        padding-top: 0;
+        text-align: center;
+    }      
+    main {
+        float: none;
+        flex-direction: column;    
+    }
+    main div {
+        column-count: 2;   
+    }
+    
+    section {
+        order: 2;                   
+        float: none;
+        width: 93%;
+    }  
+    aside {
+        order: 1;                   
+        float:none;
+        padding:0 2.5% 2.5%;
+        width: 93%;
+    }  
+    article img {
+        max-width: 30%;
+    }  
+    aside div {
+        column-count: 2;    
+    }  
+}
+
+/*/* mobile portrait layout (479px or less)*/
+@media only screen and (max-width: 479px){      
+    body {
+        font-size: 90%;
+    } 
+    main div {
+        column-count: 1;    
+    }
+}
+

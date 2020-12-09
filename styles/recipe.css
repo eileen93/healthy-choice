@@ -1,0 +1,338 @@
+/***********************************************************************************************
+                        css file for recipe page of Eileen's Healthy Choice */
+/***********************************************************************************************/
+
+/* the reset selector */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*/* tablet landscape and desktop layout (960px or more) */
+
+/* hide mobile menu */
+#mobile_menu {
+    display: none;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 98%;     
+    max-width: 960px;      
+    border: 3px solid beige;
+    background-color: #ffffff;
+    margin: 0 auto 0;
+}
+
+body h4 {
+    text-align: right;
+    margin-right: 1em;
+    margin-bottom:1em;
+}
+
+/* the styles for the header */    
+header {
+    border: 1x solid black;
+    width:100%;  
+    padding-top: .5em;
+    padding-bottom: .1em;
+
+    background-image: -webkit-linear-gradient(90deg, white 0%, beige 70%, darkgreen 100%); 
+}
+header img {
+    border: 1x solid black;
+	float: left;
+    padding: 0 1% 0;                 /* 30/800*100 refer to the exercise 8-1 No.6 */
+    height: 80px;
+}
+header h2 {
+    float: left;
+    font-style:italic;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size:200%;
+    color: forestgreen;
+}
+header h3 {
+    font-family: Caveat;               
+    font-size:150%;
+    text-align: right;
+    padding-top: 6.5%;
+    padding-right: 1.5%;
+} 
+.shadow {
+    color: #3cb44a;
+    text-shadow:2px 2px; 
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+}
+a:hover {
+    color: green;
+    font-style: italic;
+}
+/* the styles for the navigation */
+nav {
+   clear: both;
+}
+
+#nav_menu ul{
+    display: flex;      
+    flex-basis: 100%;    
+    justify-content: space-around;  
+    margin: 0;
+    padding: 0;
+    list-style: none;       
+    position: relative;     
+}
+#nav_menu ul ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li{
+    float: none;
+}
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+#nav_menu > ul::after {
+    content: "";    
+    display: block;    
+    clear: both;    
+}
+#nav_menu ul li{
+    flex-basis: 33.33%;         
+}
+#nav_menu ul li a {
+    text-align: center;
+    display: block;                         
+    /* width: 160px; */
+    text-decoration: none;
+    background-color: beige;          
+    color: darkgreen;
+    font-weight: bold;
+    padding: 1em 0;
+}
+#nav_menu ul li a.current{
+    color: lightcoral;
+}
+#nav_menu ul li a:hover {
+    background-color: yellow;
+}
+
+/* the styles for the footer */
+footer {
+    clear: both;
+    background-color: beige;
+    padding-top:1em;
+    padding-bottom:1em;
+    
+}
+footer p {
+    color: darkgreen;
+    text-align: center;
+}
+
+/* the styles for the body */
+    div {
+        column-count: 3;    
+    }
+   
+    a:hover {
+        color: green;
+        font-style: italic;
+    }
+ 
+    aside {
+        flex-basis: 90%; 
+        padding: 1% 2.5%;        
+        margin: 0 2.5% 0;  
+    }
+    aside h3 {
+        color: purple;
+    }
+    aside q {
+        color: black;
+    }
+    section, aside p {
+        color: black;
+    }
+    
+    figure, figcaption {
+        margin: 0;
+        padding: 0;
+    }
+    figure {
+        /*border: 1px solid black;*/
+        flex-basis: 28%;     
+        max-width: 250px;
+        padding: 2.5% 2.5% 2.5%;       
+        margin: 1% 1% 1%;   
+        height: 470px
+    }
+    figcaption {
+        display: block;
+        font-weight: bold;
+        text-align: center;
+        font-size: 100%;
+        color: purple;
+        padding-bottom: .25em;
+    }  
+    section {
+        /*border: 1px solid green;*/
+        flex-basis: 33%;
+        margin: 0;
+        padding: .5em;
+        height: 350px;
+    }
+    h2 {
+        size: 120%;
+        color: darkgreen;
+        text-align: center;
+    }
+    ul li {
+        margin-left: 1em;
+    }
+    .empty {
+        display: none;
+    }
+    #left {
+        float: left;
+        text-align: center;
+        font-weight: bold;
+        border: 1px solid black;
+        flex-basis: 28%;     
+        max-width: 250px;
+        padding: 2.5% 2.5% 2.5%;       
+        margin: 1% 1% 1%;   
+        height: 30px;
+        background-image: url("../images/artificial-sweetner.jpeg");
+    }
+    #right {
+        float: right;
+        text-align: center;
+        font-weight: bold;
+        border: 1px solid black;
+        flex-basis: 28%;     
+        max-width: 250px;
+        padding: 2.5% 2.5% 2.5%;       
+        margin: 1% 1% 1%;   
+        height: 30px;
+        background-image: url("../images/honey2.jpeg");
+    }
+    #receipes_h2 {
+        clear: both;
+        margin-top: 0em;  
+    }
+    .lemon_dressing {    
+        height:420px;
+    }
+    .mustard_dressing {
+        height: 250px;
+    }
+    .lime_dressing {
+        height:300px;
+    }
+    .caesar_dressing {
+       height:300px;
+    }
+    .chimichurri_sauce {
+       height:300px;
+    }
+    .moroccan_chicken {
+        height:420px;
+    }
+    #video_recipe {
+        height: auto;
+    }
+    #video_recipe figcaption {
+        font-size: 90%;
+        font-weight: 100;
+        text-decoration: underline;
+    }
+    #video_recipe summary {
+        font-size: 90%;
+        font-weight: 100;
+        color: darkgreen;
+        text-decoration: underline;
+    }
+    .bold {
+        font-size: 95%;
+        color: black;
+        font-weight: 100;
+        text-align: left;
+        margin-bottom: .2em;
+    }
+    .hidden_caption {
+        display:none;
+    }
+
+
+/*/* tablet portrait layout (768px to 959px) */
+@media only screen and (max-width: 959px){
+    section h1 {
+        font-size: 135%;
+        
+    }
+    section h2 {
+        font-size: 120%;
+    }
+
+    aside h2 {
+        font-size: 120%;
+    }
+
+    header h3 {
+    padding-top: 7.5%;
+    padding-right: 1.5%;
+    text-align: right;
+    } 
+}
+
+    
+/*/* mobile landscape layout (480px to 767px) */
+@media only screen and (max-width: 767px){
+    #nav_menu {
+        display: none;
+    }  
+    #mobile_menu 
+    { display: block;
+    }
+   .slicknav_menu {
+        background-color: lightcoral!important;
+    }
+    header img {
+        float: none;  
+    }  
+    header h2 {
+        float: none;
+        text-align: center;
+    }   
+    header h3 {
+        padding-top: 0;
+        text-align: center;
+    }      
+   
+    div {
+        column-count: 2;   
+    }
+    
+    .empty {
+        display: block;
+    }
+}
+
+/*/* mobile portrait layout (479px or less)*/
+@media only screen and (max-width: 479px){      
+    body {
+        font-size: 90%;
+    } 
+    div {
+        column-count: 1;    
+    }
+}
+
